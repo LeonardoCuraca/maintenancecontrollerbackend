@@ -10,7 +10,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::post('login', 'APILoginController@login');
+Route::get('login', 'APILoginController@login');
 
 //Route::post('logout', 'APILoginController@logout');
 
