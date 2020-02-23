@@ -13,7 +13,7 @@ Route::group([
   'middleware' => 'api'
 ], function() {
   Route::post('login', 'APILoginController@login');
-})
+});
 
 //Route::post('logout', 'APILoginController@logout');
 
