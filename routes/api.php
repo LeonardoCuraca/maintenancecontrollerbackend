@@ -11,7 +11,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group([
         'middleware' => ['api', 'cors'],
-        'namespace' => $this->namespace,
         'prefix' => 'api',
     ], function ($router) {
          //Add you routes here, for example:
