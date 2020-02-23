@@ -15,11 +15,6 @@ class APILoginController extends Controller
             // if the credentials are wrong we send an unauthorized error in json format
             return response()->json(['error' => 'Unauthorized'], 401);
         }
-        return response()->json([
-            'token' => $token,
-            'type' => 'bearer', // you can ommit this
-            'expires' => auth('api')->factory()->getTTL() * 600, // time to expiration
-
-        ])->header("Access-Control-Allow-Origin",  "*");;
+        return response("ihihihih")->header("Access-Control-Allow-Origin",  "*");;
     }
 }
