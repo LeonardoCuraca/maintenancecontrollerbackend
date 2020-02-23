@@ -20,6 +20,6 @@ class APILoginController extends Controller
             'type' => 'bearer', // you can ommit this
             'expires' => auth('api')->factory()->getTTL() * 600, // time to expiration
 
-        ]);
+        ])->header("Access-Control-Allow-Origin",  "*");;
     }
 }
